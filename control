@@ -1,0 +1,9 @@
+Package: com.hius.gesturesi11
+Name: Gesturesi11
+Depends: mobilesubstrate, preferenceloader
+Version: 3.5.3
+Architecture: iphoneos-arm
+Description: iPhone 11 gestures and other options.
+Maintainer: Hius
+Author: Hius
+Section: Tweaks

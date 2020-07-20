@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>statusBarMode</key>
+	<integer>1</integer>
+	<key>ccStatusBar</key>
+	<true/>
+	<key>homeBarSB</key>
+	<false/>
+	<key>homeBarLS</key>
+	<false/>
+	<key>homeBarAutoHide</key>
+	<false/>
+	<key>lsShortcuts</key>
+	<true/>
+	<key>highKeyboard</key>
+	<true/>
+	<key>noSwipeKeyboard</key>
+	<false/>
+	<key>noBreadcum</key>
+	<true/>
+	<key>noReachability</key>
+	<true/>
+	<key>batteryPercent</key>
+	<true/>
+	<key>staticColor</key>
+	<false/>
+	<key>hideChargingIndicator</key>
+	<false/>
+	<key>hideStockPercent</key>
+	<false/>
+	<key>stockPercentCharging</key>
+	<false/>
+	<key>nonLatinKeyboard</key>
+	<false/>
+	<key>xCombination</key>
+	<false/>
+	<key>reduceRows</key>
+	<false/>
+	<key>minimalGestures</key>
+	<false/>
+	<key>bottomInset</key>
+	<integer>0</integer>
+	<key>screenRounded</key>
+	<integer>0</integer>
+	<key>appDockRounded</key>
+	<integer>6</integer>
+</dict>
+</plist>
