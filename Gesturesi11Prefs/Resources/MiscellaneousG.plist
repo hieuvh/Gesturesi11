@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>items</key>
+        <array>
+            <dict>
+			    <key>cell</key>
+			    <string>PSGroupCell</string>
+			    <key>footerText</key>
+			    <string>⚠ Two-finger at once swipes down from the status bar to screenshot.</string>
+		    </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ No Page Dots/Icon Label</string>
+                <key>key</key>
+                <string>makeSBClean</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ No Dock Background</string>
+                <key>key</key>
+                <string>noDockBackground</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ Swipe To Screenshot</string>
+                <key>key</key>
+                <string>swipeScreenshot</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <true/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+        </array>
+        <key>title</key>
+        <string>Miscellaneous</string>
+    </dict>
+</plist>

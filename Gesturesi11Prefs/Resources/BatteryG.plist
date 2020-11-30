@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>items</key>
+        <array>
+            <dict>
+                <key>footerText</key>
+                <string>+ or -
+⚠ Turn off Battery Percentage in Battery Settings.</string>
+                <key>cell</key>
+                <string>PSGroupCell</string>
+            </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>Enable</string>
+                <key>key</key>
+                <string>batteryPercent</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <true/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ Static Color</string>
+                <key>key</key>
+                <string>staticColor</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ Hide Charging Indicator</string>
+                <key>key</key>
+                <string>hideChargingIndicator</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>+ Hide Stock Percentage</string>
+                <key>key</key>
+                <string>hideStockPercent</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>- Show in CC When Charging *</string>
+                <key>key</key>
+                <string>stockPercentCharging</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+        </array>
+        <key>title</key>
+        <string>Battery</string>
+    </dict>
+</plist>

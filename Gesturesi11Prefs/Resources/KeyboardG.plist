@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>items</key>
+        <array>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ Higher Keyboard</string>
+                <key>key</key>
+                <string>highKeyboard</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <true/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ No Gestures While Using</string>
+                <key>key</key>
+                <string>noSwipeKeyboard</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ Using Non-Latin Language</string>
+                <key>key</key>
+                <string>nonLatinKeyboard</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+        </array>
+        <key>title</key>
+        <string>Keyboard</string>
+    </dict>
+</plist>

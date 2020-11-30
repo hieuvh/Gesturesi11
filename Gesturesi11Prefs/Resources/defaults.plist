@@ -3,15 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>statusBarMode</key>
-	<integer>1</integer>
+	<integer>4</integer>
 	<key>ccStatusBar</key>
 	<true/>
+
 	<key>homeBarSB</key>
 	<false/>
 	<key>homeBarLS</key>
 	<false/>
 	<key>homeBarAutoHide</key>
 	<false/>
+
 	<key>lsShortcuts</key>
 	<true/>
 	<key>highKeyboard</key>
@@ -22,8 +24,9 @@
 	<true/>
 	<key>noReachability</key>
 	<true/>
+
 	<key>batteryPercent</key>
-	<true/>
+	<false/>
 	<key>staticColor</key>
 	<false/>
 	<key>hideChargingIndicator</key>
@@ -40,11 +43,19 @@
 	<false/>
 	<key>minimalGestures</key>
 	<false/>
+
 	<key>bottomInset</key>
 	<integer>0</integer>
 	<key>screenRounded</key>
 	<integer>0</integer>
 	<key>appDockRounded</key>
-	<integer>6</integer>
+	<integer>5</integer>
+
+	<key>noDockBackground</key>
+	<true/>
+	<key>makeSBClean</key>
+	<false/>
+	<key>swipeScreenshot</key>
+	<true/>
 </dict>
 </plist>

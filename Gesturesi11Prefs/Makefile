@@ -4,7 +4,7 @@ ARCHS = arm64 arm64e
 
 BUNDLE_NAME = Gesturesi11Prefs
 
-Gesturesi11Prefs_FILES = Gesturesi11RootListController.m
+Gesturesi11Prefs_FILES = $(wildcard *.m)
 Gesturesi11Prefs_INSTALL_PATH = /Library/PreferenceBundles
 Gesturesi11Prefs_PRIVATE_FRAMEWORKS = Preferences
 

@@ -1,10 +1,10 @@
 #import <Preferences/PSListController.h>
 #import <Preferences/PSSpecifier.h>
-#include <spawn.h>
+#import <SpringBoardServices/SBSRestartRenderServerAction.h>
+#import <FrontBoardServices/FBSSystemService.h>
 
 @interface Gesturesi11RootListController : PSListController
 @property (nonatomic, retain) UIBarButtonItem *respringButton;
-- (void)respring:(id)sender;
 @end
 
 @implementation Gesturesi11RootListController
@@ -14,12 +14,29 @@
         self.respringButton = [[UIBarButtonItem alloc] initWithTitle:@"Respring"
                                     style:UIBarButtonItemStylePlain
                                     target:self
-                                    action:@selector(respring:)];
+                                    action:@selector(respring)];
         self.respringButton.tintColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:1.0];
         self.navigationItem.rightBarButtonItem = self.respringButton;
 
     }
     return self;
+}
+
+- (void)respring {
+    UIBlurEffect* blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleRegular];
+    UIVisualEffectView* blurView = [[UIVisualEffectView alloc] initWithEffect:blur];
+    [blurView setFrame:self.view.bounds];
+    [blurView setAlpha:0.0];
+    [[self view] addSubview:blurView];
+
+    [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [blurView setAlpha:1.0];
+    } completion:^(BOOL finished) {
+        NSURL *returnURL = [NSURL URLWithString:@"prefs:root=Gesturesi11"];
+        SBSRelaunchAction *restartAction;
+        restartAction = [NSClassFromString(@"SBSRelaunchAction") actionWithReason:@"RestartRenderServer" options:SBSRelaunchActionOptionsFadeToBlackTransition targetURL:returnURL];
+        [[NSClassFromString(@"FBSSystemService") sharedService] sendActions:[NSSet setWithObject:restartAction] withResult:nil];
+    }];
 }
 
 - (NSArray *)specifiers {
@@ -29,17 +46,8 @@
 	return _specifiers;
 }
 
-- (void)respring:(id)sender {
-    pid_t pid;
-    const char* args[] = {"sbreload", NULL};
-    posix_spawn(&pid, "/usr/bin/sbreload", NULL, NULL, (char* const*)args, NULL);
-}
-
 -(void)openTwitter:(id)arg1 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/helios017"] options:@{} completionHandler:nil];
-}
--(void)openPayPal:(id)arg1 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://paypal.me/hius017"] options:@{} completionHandler:nil];
 }
 
 - (id)readPreferenceValue:(PSSpecifier*)specifier {

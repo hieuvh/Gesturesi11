@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>items</key>
+        <array>
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ Auto Hide</string>
+                <key>key</key>
+                <string>homeBarAutoHide</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ In-App</string>
+                <key>key</key>
+                <string>homeBarSB</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+
+            <dict>
+                <key>cell</key>
+                <string>PSSwitchCell</string>
+                <key>label</key>
+                <string>◦ LockScreen</string>
+                <key>key</key>
+                <string>homeBarLS</string>
+                <key>defaults</key>
+                <string>com.hius.Gesturesi11Prefs</string>
+                <key>default</key>
+                <false/>
+                <key>PostNotification</key>
+                <string>com.hius.Gesturesi11Prefs.settingschanged</string>
+            </dict>
+        </array>
+        <key>title</key>
+        <string>Home Bar</string>
+    </dict>
+</plist>

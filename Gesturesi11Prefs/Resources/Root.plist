@@ -16,19 +16,10 @@
 			<key>icon</key>
 			<string>twitter.png</string>
 		</dict>
+
 		<dict>
 			<key>label</key>
-			<string>Donation ❤</string>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>action</key>
-			<string>openPayPal:</string>
-			<key>icon</key>
-			<string>donation.png</string>
-		</dict>
-		<dict>
-			<key>label</key>
-			<string>▼ Status Bar Style</string>
+			<string>▽ Status Bar Style</string>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 		</dict>
@@ -49,263 +40,43 @@
 				<integer>1</integer>
 				<integer>2</integer>
 				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>			
 			</array>
 			<key>validTitles</key>
 			<array>
 				<string>Default</string>
-				<string>iPhone X*</string>
 				<string>iPad</string>
 				<string>iPad Extra</string>
+				<string>iPhone X</string>
+				<string>iPhone X*</string>
+				<string>iPhone 11*</string>
 			</array>
 			<key>PostNotification</key>
 			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>▷ Miniature Gestures</string>
+			<key>key</key>
+			<string>minimalGestures</string>
+			<key>defaults</key>
+			<string>com.hius.Gesturesi11Prefs</string>
+			<key>default</key>
+			<false/>
+			<key>PostNotification</key>
+			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
+		</dict>
+
 		<dict>
 			<key>label</key>
 			<string>✯ General options</string>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkCell</string>
-			<key>label</key>
-			<string>‣ Battery Percentage</string>
-			<key>detail</key>
-			<string>PSListController</string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>cell</key>
-					<string>PSGroupCell</string>
-					<key>footerText</key>
-					<string>+ or -
-⚠ Turn off Battery Percentage in Battery Settings.</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>Enable</string>
-					<key>key</key>
-					<string>batteryPercent</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<true/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>◦ Static Color</string>
-					<key>key</key>
-					<string>staticColor</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<false/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>◦ Hide Charging Indicator</string>
-					<key>key</key>
-					<string>hideChargingIndicator</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<false/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>+ Hide Stock Percentage</string>
-					<key>key</key>
-					<string>hideStockPercent</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<false/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>- Show in CC When Charging *</string>
-					<key>key</key>
-					<string>stockPercentCharging</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<false/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-			</array>
-			<key>title</key>
-			<string>◦Battery Percentage◦</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkCell</string>
-			<key>label</key>
-			<string>‣ Bottom Inset + Rounded Corners</string>
-			<key>detail</key>
-			<string>PSListController</string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>label</key>
-					<string>◦ Bottom Inset</string>
-					<key>cell</key>
-					<string>PSGroupCell</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSliderCell</string>
-					<key>isSegmented</key>
-					<true/>
-					<key>default</key>
-					<real>0</real>
-					<key>max</key>
-					<real>30</real>
-					<key>min</key>
-					<integer>0</integer>
-					<key>showValue</key>
-					<true/>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>key</key>
-					<string>bottomInset</string>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>label</key>
-					<string>◦ Rounded Dock and App Switcher</string>
-					<key>cell</key>
-					<string>PSGroupCell</string>
-					<key>footerText</key>
-					<string>5.0: Disabled</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSliderCell</string>
-					<key>isSegmented</key>
-					<true/>
-					<key>default</key>
-					<real>10</real>
-					<key>max</key>
-					<real>30</real>
-					<key>min</key>
-					<integer>5</integer>
-					<key>showValue</key>
-					<true/>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>key</key>
-					<string>appDockRounded</string>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>label</key>
-					<string>◦ Rounded Screen Corners</string>
-					<key>cell</key>
-					<string>PSGroupCell</string>
-					<key>footerText</key>
-					<string>0.0: Disabled</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSliderCell</string>
-					<key>isSegmented</key>
-					<true/>
-					<key>default</key>
-					<real>10</real>
-					<key>max</key>
-					<real>30</real>
-					<key>min</key>
-					<integer>0</integer>
-					<key>showValue</key>
-					<true/>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>key</key>
-					<string>screenRounded</string>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-			</array>
-			<key>title</key>
-			<string>◦Bottom Inset + Rounded Corners◦</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkCell</string>
-			<key>label</key>
-			<string>‣ Custom Home Bar</string>
-			<key>detail</key>
-			<string>PSListController</string>
-			<key>items</key>
-			<array>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>◦ Home Bar LockScreen</string>
-					<key>key</key>
-					<string>homeBarLS</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<false/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>◦ Home Bar SpringBoard</string>
-					<key>key</key>
-					<string>homeBarSB</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<false/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-				<dict>
-					<key>cell</key>
-					<string>PSSwitchCell</string>
-					<key>label</key>
-					<string>◦ Home Bar Auto Hide</string>
-					<key>key</key>
-					<string>homeBarAutoHide</string>
-					<key>defaults</key>
-					<string>com.hius.Gesturesi11Prefs</string>
-					<key>default</key>
-					<false/>
-					<key>PostNotification</key>
-					<string>com.hius.Gesturesi11Prefs.settingschanged</string>
-				</dict>
-			</array>
-			<key>title</key>
-			<string>◦Home Bar◦</string>
-		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
@@ -320,11 +91,12 @@
 			<key>PostNotification</key>
 			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
 		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>label</key>
-			<string>◦ Combination[Power + Volume Up]</string>
+			<string>◦ Combination Button X</string>
 			<key>key</key>
 			<string>xCombination</string>
 			<key>defaults</key>
@@ -334,11 +106,12 @@
 			<key>PostNotification</key>
 			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
 		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>label</key>
-			<string>◦ LockScreen Shortcuts</string>
+			<string>◦ Quick LS Shortcuts</string>
 			<key>key</key>
 			<string>lsShortcuts</string>
 			<key>defaults</key>
@@ -348,6 +121,7 @@
 			<key>PostNotification</key>
 			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
 		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
@@ -362,6 +136,7 @@
 			<key>PostNotification</key>
 			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
 		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
@@ -376,11 +151,12 @@
 			<key>PostNotification</key>
 			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
 		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>label</key>
-			<string>◦ Reduce Rows</string>
+			<string>◦ Reduce Icon Row</string>
 			<key>key</key>
 			<string>reduceRows</string>
 			<key>defaults</key>
@@ -390,82 +166,69 @@
 			<key>PostNotification</key>
 			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
 		</dict>
+
 		<dict>
 			<key>label</key>
-			<string>✯ Gestures</string>
+			<string>✯ More Options</string>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 		</dict>
+
+		<!-- Battery Percentage -->
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
+			<string>PSLinkCell</string>
 			<key>label</key>
-			<string>◦ Miniature</string>
-			<key>key</key>
-			<string>minimalGestures</string>
-			<key>defaults</key>
-			<string>com.hius.Gesturesi11Prefs</string>
-			<key>default</key>
-			<false/>
-			<key>PostNotification</key>
-			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
+			<string>▷ Battery</string>
+			<key>detail</key>
+			<string>BatteryGListPrefs</string>
 		</dict>
-		<dict>
-			<key>label</key>
-			<string>✯ Keyboard options</string>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-		</dict>
+
+		<!-- Home Bar -->
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
+			<string>PSLinkCell</string>
 			<key>label</key>
-			<string>◦ Higher Keyboard</string>
-			<key>key</key>
-			<string>highKeyboard</string>
-			<key>defaults</key>
-			<string>com.hius.Gesturesi11Prefs</string>
-			<key>default</key>
-			<true/>
-			<key>PostNotification</key>
-			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
+			<string>▷ Home Bar</string>
+			<key>detail</key>
+			<string>HomeBarGListPrefs</string>
 		</dict>
+
+		<!-- Inset -->
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
+			<string>PSLinkCell</string>
 			<key>label</key>
-			<string>◦ No Gestures When Keyboard</string>
-			<key>key</key>
-			<string>noSwipeKeyboard</string>
-			<key>defaults</key>
-			<string>com.hius.Gesturesi11Prefs</string>
-			<key>default</key>
-			<false/>
-			<key>PostNotification</key>
-			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
+			<string>▷ Inset</string>
+			<key>detail</key>
+			<string>InsetGListPrefs</string>
 		</dict>
+
+		<!-- Keyboard -->
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
+			<string>PSLinkCell</string>
 			<key>label</key>
-			<string>◦ Non-Latin Keyboard</string>
-			<key>key</key>
-			<string>nonLatinKeyboard</string>
-			<key>defaults</key>
-			<string>com.hius.Gesturesi11Prefs</string>
-			<key>default</key>
-			<false/>
-			<key>PostNotification</key>
-			<string>com.hius.Gesturesi11Prefs.settingschanged</string>
+			<string>▷ Keyboard</string>
+			<key>detail</key>
+			<string>KeyboardGListPrefs</string>
 		</dict>
+
+		<!-- Miscellaneous -->
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>▷ Miscellaneous</string>
+			<key>detail</key>
+			<string>MiscellaneousGListPrefs</string>
+		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>⚠ Note:
-➊ Status Bar Style: *Calibrate.
-➋ Miniature: Reduce the ability to switch applications quickly when swiping left or right on the bottom edge.
-➌ Non-Latin Keyboard: Fix conflicts right padding for non-Latin keyboard.
+			<string>⚠ Miniature Gestures: Reduce the ability to switch applications quickly when swiping left or right on the bottom edge.
 ✔ RESPRING TO TAKE EFFECT.</string>
 		</dict>
 	</array>
